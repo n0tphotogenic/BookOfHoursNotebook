@@ -1,5 +1,5 @@
 import unittest
-from src.parser import CraftParser 
+from src import CraftParser
 
 class TestCraftParser(unittest.TestCase):
   @classmethod
