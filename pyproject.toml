@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "book_of_hours_notebook"
+version = "0.1.0"
+description = "A tool for parsing and visualizing book of hours contents"
+readme = "README.md"
+license = { text = "AGPL" }
+authors = [
+    { name = "n0tphotogenic", email = "tbw4530@gmail.com" }
+]
+dependencies = [
+
+]
+
+[project.scripts]
+parser-cli = "src.main:main"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers"
